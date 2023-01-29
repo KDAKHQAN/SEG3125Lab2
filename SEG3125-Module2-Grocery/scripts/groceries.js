@@ -7,18 +7,88 @@ var products = [
 		name: "brocoli",
 		vegetarian: true,
 		glutenFree: true,
+		organic: true,
+		notorganic: false,
+		price: 1.99
+	},
+	{
+		name: "eggs",
+		vegetarian: true,
+		glutenFree: true,
+		organic: true,
+		notorganic: false,
 		price: 1.99
 	},
 	{
 		name: "bread",
 		vegetarian: true,
 		glutenFree: false,
+		organic: true,
+		notorganic: false,
 		price: 2.35
+	},
+	{
+		name: "noodles",
+		vegetarian: true,
+		glutenFree: false,
+		organic: true,
+		notorganic: false,
+		price: 2.35
+	},
+	{
+		name: "cookies",
+		vegetarian: true,
+		glutenFree: false,
+		organic: false,
+		notorganic: true,
+		price: 2.99
+	},
+	{
+		name: "potato chips",
+		vegetarian: true,
+		glutenFree: true,
+		organic: false,
+		notorganic: true,
+		price: 2.99
+	},
+	{
+		name: "donuts",
+		vegetarian: true,
+		glutenFree: false,
+		organic: false,
+		notorganic: true,
+		price: 3.35
+	},
+	{
+		name: "milk",
+		vegetarian: true,
+		glutenFree: true,
+		organic: true,
+		notorganic: false,
+		price: 3.99
+	},
+	{
+		name: "chicken",
+		vegetarian: false,
+		glutenFree: true,
+		organic: true,
+		notorganic: false,
+		price: 8.00
+	},
+	{
+		name: "beef",
+		vegetarian: false,
+		glutenFree: true,
+		organic: true,
+		notorganic: false,
+		price: 9.00
 	},
 	{
 		name: "salmon",
 		vegetarian: false,
 		glutenFree: true,
+		organic: true,
+		notorganic: false,
 		price: 10.00
 	}
 ];
@@ -37,10 +107,20 @@ function restrictListProducts(prods, restriction) {
 		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
 			product_names.push(prods[i].name);
 		}
+		else if ((restriction == "Organic") && (prods[i].organic == true)){
+			product_names.push(prods[i].name);
+		}
+		else if ((restriction == "notOrganic") && (prods[i].notorganic == true)){
+			product_names.push(prods[i].name);
+		}
+		else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].glutenFree == true)&& (prods[i].vegetarian == true)){
+			product_names.push(prods[i].name);
+		}
 		else if (restriction == "None"){
 			product_names.push(prods[i].name);
 		}
 	}
+
 	return product_names;
 }
 
