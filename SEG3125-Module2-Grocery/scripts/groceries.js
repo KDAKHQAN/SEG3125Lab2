@@ -4,7 +4,7 @@
 
 var products = [
 	{
-		name: "brocoli",
+		name: "broccoli $1.99",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
@@ -12,7 +12,7 @@ var products = [
 		price: 1.99
 	},
 	{
-		name: "eggs",
+		name: "eggs $1.99",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
@@ -20,7 +20,7 @@ var products = [
 		price: 1.99
 	},
 	{
-		name: "bread",
+		name: "bread $2.35",
 		vegetarian: true,
 		glutenFree: false,
 		organic: true,
@@ -28,7 +28,7 @@ var products = [
 		price: 2.35
 	},
 	{
-		name: "noodles",
+		name: "noodles $2.35",
 		vegetarian: true,
 		glutenFree: false,
 		organic: true,
@@ -36,7 +36,7 @@ var products = [
 		price: 2.35
 	},
 	{
-		name: "cookies",
+		name: "cookies $2.99",
 		vegetarian: true,
 		glutenFree: false,
 		organic: false,
@@ -44,7 +44,7 @@ var products = [
 		price: 2.99
 	},
 	{
-		name: "potato chips",
+		name: "potato chips $2.99",
 		vegetarian: true,
 		glutenFree: true,
 		organic: false,
@@ -52,7 +52,7 @@ var products = [
 		price: 2.99
 	},
 	{
-		name: "donuts",
+		name: "donuts $3.35",
 		vegetarian: true,
 		glutenFree: false,
 		organic: false,
@@ -60,7 +60,7 @@ var products = [
 		price: 3.35
 	},
 	{
-		name: "milk",
+		name: "milk $3.99",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
@@ -68,7 +68,7 @@ var products = [
 		price: 3.99
 	},
 	{
-		name: "chicken",
+		name: "chicken $8.00",
 		vegetarian: false,
 		glutenFree: true,
 		organic: true,
@@ -76,7 +76,7 @@ var products = [
 		price: 8.00
 	},
 	{
-		name: "beef",
+		name: "beef $9.00",
 		vegetarian: false,
 		glutenFree: true,
 		organic: true,
@@ -84,7 +84,7 @@ var products = [
 		price: 9.00
 	},
 	{
-		name: "salmon",
+		name: "salmon $10.00",
 		vegetarian: false,
 		glutenFree: true,
 		organic: true,
